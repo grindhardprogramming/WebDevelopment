@@ -1,0 +1,113 @@
+.main-content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #34495e;
+    font-family: 'Lato', sans-serif;
+}
+
+.main-content .btn-ex-1{
+    position: relative;
+    width: 400px;
+    height: 100px;
+    font-size: 50px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border: solid 2px #2ecc71;
+    color: white;
+    cursor: pointer;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.main-content .btn-ex-1::before{
+    transition: all .5s ease-out;
+    position: absolute;
+    content: '';
+    height: 100px;
+    width: 100px;
+    top: -100px;
+    left: -50px;
+    background: #e67e22;
+    z-index: 1;
+    border-radius: 90%;
+}
+
+.main-content .btn-ex-1::after{
+    transition: all .5s ease-out;
+    position: absolute;
+    content: '';
+    height: 100px;
+    width: 100px;
+    bottom: -100px;
+    right: -50px;
+    background: #e67e22;
+    border-radius: 90%;
+    z-index: 1;
+}
+
+.main-content .btn-ex-1:hover::before{
+    transition: all .5s ease-out;
+    top: -50px;
+}
+
+.main-content .btn-ex-1:hover::after{
+    transition: all .5s ease-out;
+    bottom: -50px;
+}
+
+.main-content .btn-ex-2{
+    position: relative;
+    width: 400px;
+    height: 100px;
+    font-size: 50px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border: solid 2px #2ecc71;
+    color: white;
+    cursor: pointer;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.main-content .btn-ex-2::before{
+    transition: all .5s ease-out;
+    position: absolute;
+    content: '';
+    height: 100px;
+    width: 100px;
+    top: 0;
+    left: -125px;
+    background: #e67e22;
+    z-index: 1;
+    transform: rotate(45deg);
+}
+
+.main-content .btn-ex-2::after{
+    transition: all .5s ease-out;
+    position: absolute;
+    content: '';
+    height: 100px;
+    width: 100px;
+    top: 0;
+    right: -125px;
+    background: #e67e22;
+    z-index: 1;
+    transform: rotate(45deg);
+}
+
+
+.main-content .btn-ex-2:hover::before{
+    transition: all .5s ease-out;
+    left: -50px;
+}
+
+.main-content .btn-ex-2:hover::after{
+    transition: all .5s ease-out;
+    right: -50px;
+}
